@@ -53,6 +53,44 @@ table {
     box-sizing: border-box;
 }
 
+html {
+	font-size: 62.5%;
+}
+
 html, body {
     height: 100%;
+}
+
+// create variable for h2 font-size
+// create variable for background color
+
+// create mixins for any reused styles
+
+.container {
+	display: flex;
+	flex-direction: column;
+	max-width: 880px;
+	margin: 0 auto;
+
+	header {
+		display: flex;
+		justify-content: flex-end;
+		width: 100%;
+		margin: 25px 0;
+
+		nav {
+			justify-content: space-between;
+			width: 50%;
+
+			a {
+				text-decoration: none;
+				font-size: 1.6rem;
+			}
+		}
+	}
+
+	.about {
+		display: flex;
+		justify-content: space-between;
+	}
 }

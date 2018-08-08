@@ -130,7 +130,34 @@ table {
 * {
   box-sizing: border-box;
 }
+html {
+  font-size: 62.5%;
+}
 html,
 body {
   height: 100%;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 880px;
+  margin: 0 auto;
+}
+.container header {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin: 25px 0;
+}
+.container header nav {
+  justify-content: space-between;
+  width: 50%;
+}
+.container header nav a {
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+.container .about {
+  display: flex;
+  justify-content: space-between;
 }
