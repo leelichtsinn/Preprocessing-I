@@ -62,36 +62,40 @@ html, body {
 }
 
 // create variable for h2 font-size
-// create variable for background color
-@intro-background: #bbf7e0;
+@h2-font: 2.5rem;
+// create variable for background color #0000ff
+@intro-background: #e17055;
 
 // create mixins for any reused styles
+
 
 .container {
 	display: flex;
 	flex-direction: column;
 	max-width: 880px;
 	margin: 0 auto;
+}
 
-	header {
-		display: flex;
-		justify-content: flex-end;
-		width: 100%;
-		margin: 25px 0;
+header {
+	display: flex;
+	justify-content: flex-end;
+	width: 100%;
+	margin: 25px 0;
 
-		nav {
-			justify-content: space-between;
-			width: 50%;
-
-			a {
-				text-decoration: none;
-				font-size: 1.6rem;
-			}
-		}
+	nav a {
+		text-decoration: none;
+		font-size: 1.6rem;
+		padding: 15px;
 	}
+}
 
-	.about {
+.about {
+	display: flex;
+	justify-content: space-between;
+	background: @intro-background;
+
+	intro {
 		display: flex;
-		justify-content: space-between;
+		flex-direction: column;
 	}
 }

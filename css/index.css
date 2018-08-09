@@ -143,21 +143,23 @@ body {
   max-width: 880px;
   margin: 0 auto;
 }
-.container header {
+header {
   display: flex;
   justify-content: flex-end;
   width: 100%;
   margin: 25px 0;
 }
-.container header nav {
-  justify-content: space-between;
-  width: 50%;
-}
-.container header nav a {
+header nav a {
   text-decoration: none;
   font-size: 1.6rem;
+  padding: 15px;
 }
-.container .about {
+.about {
   display: flex;
   justify-content: space-between;
+  background: #e17055;
+}
+.about intro {
+  display: flex;
+  flex-direction: column;
 }
