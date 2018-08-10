@@ -130,18 +130,26 @@ header {
 .work-history {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	border: 1px solid grey;
 	margin: 25px 0;
 
 	.history-header {
-		width: 100%;
+		background: @intro-background;
+	}
 
-		h2 {
-			font-size: @h2-font-size;
+	.history-header h2 {
+		font-size: @h2-font-size;
+		padding: 10px;
+	}
+
+	.history-row {
+		display: flex;
+		justify-content: space-between;
+		border-top: 1px solid grey;
+		padding: 10px;
+
+		.history-ctn {
+			width: 30%;
 		}
 	}
-}
-
-.tableContainer {
-	width: 30%;
 }
