@@ -142,6 +142,7 @@ body {
   flex-direction: column;
   max-width: 880px;
   margin: 0 auto;
+  font-size: 1.6rem;
 }
 header {
   display: flex;
@@ -159,7 +160,8 @@ header nav a {
   justify-content: space-between;
   background: #e17055;
 }
-.about intro {
+.about .intro {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
 }
