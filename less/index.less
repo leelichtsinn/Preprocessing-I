@@ -61,8 +61,8 @@ html, body {
     height: 100%;
 }
 
-// create variable for h2 font-size
-@h2-font: 2.5rem;
+@h1-font-size: 3.0rem;
+@h2-font-size: 2.5rem;
 // create variable for background color #0000ff
 @intro-background: #e17055;
 @footer-backgroun: #fab1a0;
@@ -76,6 +76,7 @@ html, body {
 	max-width: 880px;
 	margin: 0 auto;
 	font-size: 1.6rem;
+	line-height: normal;
 }
 
 header {
@@ -95,10 +96,23 @@ header {
 	display: flex;
 	justify-content: space-between;
 	background: @intro-background;
+}
 
-	.intro {
-		display: flex;
-		justify-content: space-between;
-		width: 100%;
+.intro {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+
+	img {
+		padding: 15px;
+	}
+}
+
+.about .intro .text-container {
+	padding: 15px;
+
+	h1 {
+		font-size: @h1-font-size;
+		padding-bottom: 10px;
 	}
 }

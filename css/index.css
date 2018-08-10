@@ -143,6 +143,7 @@ body {
   max-width: 880px;
   margin: 0 auto;
   font-size: 1.6rem;
+  line-height: normal;
 }
 header {
   display: flex;
@@ -160,8 +161,18 @@ header nav a {
   justify-content: space-between;
   background: #e17055;
 }
-.about .intro {
+.intro {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   width: 100%;
+}
+.intro img {
+  padding: 15px;
+}
+.about .intro .text-container {
+  padding: 15px;
+}
+.about .intro .text-container h1 {
+  font-size: 3rem;
+  padding-bottom: 10px;
 }
