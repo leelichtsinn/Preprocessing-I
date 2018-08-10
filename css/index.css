@@ -181,8 +181,25 @@ header nav a {
   justify-content: space-between;
   margin: 25px 0;
 }
-.skills h2 {
+.skills .text-container {
+  width: 45%;
+}
+.skills .text-container h2 {
   font-size: 2.5rem;
+  padding: 10px 0;
+}
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid grey;
+}
+.skills-list .skills-list-header h2 {
+  font-size: 2.5rem;
+  padding: 10px;
+}
+.skills-list .skills-list-ctn {
+  border-top: 1px solid grey;
+  padding: 10px;
 }
 .work-history {
   display: flex;

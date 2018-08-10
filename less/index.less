@@ -122,8 +122,29 @@ header {
 	justify-content: space-between;
 	margin: 25px 0;
 
-	h2 {
+	.text-container {
+		width: 45%;
+
+		h2 {
+			font-size: @h2-font-size;
+			padding: 10px 0;
+		}
+	}
+}
+
+.skills-list {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid grey;
+
+	.skills-list-header h2 {
 		font-size: @h2-font-size;
+		padding: 10px;
+	}
+
+	.skills-list-ctn {
+		border-top: 1px solid grey;
+		padding: 10px;
 	}
 }
 
